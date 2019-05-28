@@ -7,6 +7,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@codekraft-studio/vue-animated": "^0.1.3",
     "@inotom/vue-go-top": "^1.1.0",
     "animate.css": "^3.7.0",
     "axios": "^0.18.0",
@@ -14,6 +15,8 @@
     "vue": "^2.6.10",
     "vue-backtotop": "^1.6.1",
     "vue-router": "^3.0.3",
+    "vue2-animate": "^2.1.0",
+    "vue2-smooth-scroll": "^1.0.5",
     "vuetify": "^1.5.5",
     "vuex": "^3.0.1"
   },

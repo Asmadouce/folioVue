@@ -5,7 +5,6 @@
             <v-timeline>
                 <v-timeline-item
                         v-for="experience in experiences"
-                        :key="n"
                         class="experience violet my-5"
                         color="grey darken-5"
                         large

@@ -1,16 +1,13 @@
 <template>
-    <div>
-        <div class="section1">
-            <v-container fill-height>
+    <div class="section1">
+<!--            <v-container  fill-height>-->
                 <v-layout align-center>
                     <v-flex text-xs-center>
                         <h1 >Asmae El Gueddari</h1>
                     </v-flex>
                 </v-layout>
-                <slot></slot>
-            </v-container>
-        </div>
-
+<!--            </v-container>-->
+            <slot></slot>
     </div>
 </template>
 
@@ -48,6 +45,5 @@
             padding: 10em;
         }
     }
-
 
 </style>
