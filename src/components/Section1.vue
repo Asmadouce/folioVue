@@ -1,9 +1,12 @@
 <template>
+
+
+
     <div class="section1">
 <!--            <v-container  fill-height>-->
-                <v-layout align-center>
-                    <v-flex text-xs-center>
-                        <h1 >Asmae El Gueddari</h1>
+                <v-layout >
+                    <v-flex class="pa-5" text-xs-center>
+                        <h1 class="asmae">Asmae </br> El Gueddari</h1>
                     </v-flex>
                 </v-layout>
 <!--            </v-container>-->
@@ -13,10 +16,10 @@
 
 <script>
 
-    import * as easings from 'vuetify/es5/util/easing-patterns'
     export default {
         name: "Section1",
     }
+
 </script>
 
 <style scoped>
@@ -29,8 +32,11 @@
         font-size: 100px;
         color: whitesmoke;
     }
+    .asmae{
+        padding-top: 35vh;
+    }
     .section1{
-        padding: 29em;
+        height:100vh;
         background-image: radial-gradient(circle at top left, #f8bbd0, #140e1c);
     }
     @media(max-width: 577px)  {
@@ -39,11 +45,23 @@
             font-size: 1px;
             padding:4em;
         }
+
     }
-    @media(max-width: 800px)  {
+    @media(max-width: 760px)  {
+        h1{
+            font-family: AmaticFont,sans-serif;
+            font-size: 65px;
+            color: whitesmoke;
+        }
         .section1{
             padding: 10em;
         }
+        .asmae{
+            padding-top: 25vh;
+        }
+    }
+    main > .container {
+        height: 100vh;
     }
 
 </style>

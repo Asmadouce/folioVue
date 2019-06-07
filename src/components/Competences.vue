@@ -1,12 +1,16 @@
 <template>
-    <div class="img" >
-        <div >
-            <h3>Compétences</h3>
-            <v-container grid-list-sm fluid>
+
+    <div class="competences">
+        <div class="img">
+            <v-container >
+                <v-flex xs12 sm9 md10>
+                    <h3  >Compétences</h3>
+                </v-flex>
+
+                <v-container grid-list-sm fluid>
                     <v-layout row wrap>
                         <v-flex
                                 v-for="competence in competences"
-                                :key="competence"
                                 xs12
                                 sm6
                                 lg3
@@ -15,9 +19,10 @@
                             <v-hover >
                                 <v-card flat tile
                                         slot-scope="{ hover }"
-                                        :class="`elevation-${hover ? 14 : 3}`"
+                                        :class="`elevation-${hover ? 12 : 2}`"
                                         width="244"
                                         id="radius"
+                                        class="ma-4"
                                 >
                                     <v-img
                                             :aspect-ratio="1"
@@ -27,8 +32,10 @@
                                     ></v-img>
                                 </v-card>
                             </v-hover>
+
                         </v-flex>
                     </v-layout>
+                </v-container>
             </v-container>
         </div>
     </div>
@@ -44,6 +51,8 @@
                 competences:[] ,
                 loading: true,
                 errored: false,
+                reviews: 413,
+                value: 4.5
             }
         },
 
@@ -52,7 +61,6 @@
                 axios
                     .get(`http://127.0.0.1:8000/api/v1/competences`)
                     .then(response => (this.competences = response.data))
-                console.log(this.competences)
             }
         },
         methods: {
@@ -73,18 +81,14 @@
     h3 {
         font-family: AmaticFont, sans-serif;
         font-size: 50px;
-        color: antiquewhite;
+        color: #705465;
         padding: 90px;
     }
     #radius{
         border-width: 25px 4px;
         border-radius: 5px 40px;;
     }
-    .img{
-        background-image: url("../assets/img/mac4.jpg");
-        background-size: cover;
-
+    .competences{
 
     }
-
 </style>

@@ -1,5 +1,5 @@
 {
-  "name": "foliovue1",
+  "name": "foliovue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,18 +10,24 @@
     "@codekraft-studio/vue-animated": "^0.1.3",
     "@inotom/vue-go-top": "^1.1.0",
     "animate.css": "^3.7.0",
+    "aos": "^3.0.0-beta.6",
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
+    "qs": "^6.7.0",
+    "vee-validate": "^2.2.9",
     "vue": "^2.6.10",
+    "vue-animate-scroll": "^0.1.5",
     "vue-backtotop": "^1.6.1",
     "vue-router": "^3.0.3",
     "vue2-animate": "^2.1.0",
     "vue2-smooth-scroll": "^1.0.5",
     "vuetify": "^1.5.5",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "webpack": "^4.32.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.7.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-service": "^3.7.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",

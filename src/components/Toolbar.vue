@@ -18,7 +18,7 @@
 
             >
                 <v-list >
-                    <v-list-tile v-for="link in links" :key="link.text" router :to="link.route" class="white--text">
+                    <v-list-tile v-for="link in links" :key="link.text"  :href="link.href" class="white--text">
                         <v-list-tile-action>
                             <v-icon color="white">{{ link.icon }}</v-icon>
                         </v-list-tile-action>
@@ -41,10 +41,11 @@
             return {
                 drawer: null,
                 links: [
-                    { icon: 'dashboard', text: 'Menu', route: '/' },
-                    { icon: 'folder', text: 'Compétences', route: '/competences' },
-                    { icon: 'folder', text: 'Expériences', route: '/experiences.js' },
-                    { icon: 'email', text: 'Contact', route: '/contact' },
+                    { icon: 'dashboard', text: 'Menu', href: '#home'},
+                    { icon: 'folder', text: 'Competence', href: '#cptence'},
+                    { icon: 'folder', text: 'A propos', href: "#Apropos"},
+                    { icon: 'folder', text: 'Expériences', href: '#experience'},
+                    { icon: 'email', text: 'Contact', href: '#contact'},
                 ]
             }
         }
