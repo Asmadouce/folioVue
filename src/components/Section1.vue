@@ -1,15 +1,20 @@
 <template>
-
-
-
     <div class="section1">
-<!--            <v-container  fill-height>-->
                 <v-layout >
-                    <v-flex class="pa-5" text-xs-center>
-                        <h1 class="asmae">Asmae </br> El Gueddari</h1>
+                    <v-flex class=" pa-5" text-xs-center color="#41303f">
+                        <h1 class="asmae font-weight-thin" >
+                            Asmae El Gueddari
+                        </h1>
                     </v-flex>
                 </v-layout>
-<!--            </v-container>-->
+
+                <v-layout>
+                    <v-flex class="pa-5 font-weight-thin" text-xs-center>
+                        <v-btn outline class="pa-4" color="#41303f">
+                        <a  id="link" :href= "require('../assets/img/cvAsmaev.jpg')" download>Télécharger mon cv</a>
+                        </v-btn>
+                    </v-flex>
+                </v-layout>
             <slot></slot>
     </div>
 </template>
@@ -23,38 +28,42 @@
 </script>
 
 <style scoped>
-    @font-face {
-        font-family: AmaticFont;
-        src: url(../assets/AmaticSC-Regular.ttf);
-    }
+    /*@font-face {*/
+    /*    font-family: AmaticFont;*/
+    /*    src: url(../assets/AmaticSC-Regular.ttf);*/
+    /*}*/
     h1{
-        font-family: AmaticFont,sans-serif;
         font-size: 100px;
-        color: whitesmoke;
     }
     .asmae{
-        padding-top: 35vh;
+        padding-top: 52vh;
+        color: #41303f;
+    }
+    #link{
+        color: #41303f;
+        text-decoration: none;
     }
     .section1{
-        height:100vh;
-        background-image: radial-gradient(circle at top left, #f8bbd0, #140e1c);
+        background-image: url("../assets/img/cvAsmae4.jpg") ;
+        font-family: Roboto,sans-serif;
+        background-position: top center;
     }
     @media(max-width: 577px)  {
         .section1{
-            font-family: AmaticFont,sans-serif;
-            font-size: 1px;
-            padding:4em;
+            background-image: url("../assets/img/cvAsmae4mobile.jpg") ;
+            font-family: Roboto,sans-serif;
         }
-
     }
     @media(max-width: 760px)  {
         h1{
-            font-family: AmaticFont,sans-serif;
+            font-family: Roboto,sans-serif;
             font-size: 65px;
             color: whitesmoke;
         }
         .section1{
+            background-image: url("../assets/img/cvAsmae4mobile.jpg") ;
             padding: 10em;
+            background-position: top center;
         }
         .asmae{
             padding-top: 25vh;

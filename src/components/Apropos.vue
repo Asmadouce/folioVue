@@ -2,24 +2,20 @@
     <div class="Apropos">
         <v-container  grid-list-sm>
             <v-layout row wrap>
-                <v-flex d-flex xs12 sm9>
+                <v-flex d-flex xs12>
                     <v-layout fluid row wrap>
                             <v-flex d-flex>
-                                <h3 >A propos</h3>
+                                <h3 data-aos="fade-right"
+                                    data-aos-duration="1500"
+                                    class="font-weight-thin" >
+                                    A propos
+                                </h3>
                             </v-flex>
 
                                 <v-flex d-flex>
                                     <div>{{ lorem }}</div>
                                 </v-flex>
                     </v-layout>
-                </v-flex>
-                <v-spacer></v-spacer>
-                <v-flex d-flex xs12 sm3>
-                    <v-img
-                            :src="require('@/assets/img/asmaoui.png')"
-                            aspect-ratio="0.7"
-                            contain
-                    ></v-img>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -41,11 +37,11 @@
 </script>
 
 <style scoped>
-    h3 {
-        font-family: AmaticFont, sans-serif;
-        font-size: 50px;
+    h3{
+        font-family: Roboto, sans-serif;
+        font-size: 70px;
         color: #705465;
-        padding: 90px;
+        padding: 90px 0;
     }
 
 </style>

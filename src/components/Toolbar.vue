@@ -4,8 +4,8 @@
             <v-toolbar
                     flat
                     fixed
-                    class="grey darken-3"
-
+                    class="color grey darken-3"
+                    scroll-off-screen
             >
                 <v-toolbar-side-icon dark @click.stop="drawer = !drawer"></v-toolbar-side-icon>
             </v-toolbar>
@@ -41,11 +41,12 @@
             return {
                 drawer: null,
                 links: [
-                    { icon: 'dashboard', text: 'Menu', href: '#home'},
+                    { icon: 'home', text: 'Menu', href: '#home'},
                     { icon: 'folder', text: 'Competence', href: '#cptence'},
-                    { icon: 'folder', text: 'A propos', href: "#Apropos"},
-                    { icon: 'folder', text: 'Expériences', href: '#experience'},
+                    { icon: 'assignment_ind', text: 'A propos', href: "#Apropos"},
+                    { icon: 'assignment_returned', text: 'Expériences', href: '#experience'},
                     { icon: 'email', text: 'Contact', href: '#contact'},
+                    { icon: 'person_pin_circle', text: 'Coordonnees', href: '#Coordonnees'},
                 ]
             }
         }
@@ -56,5 +57,8 @@
     .violet{
         background-color: #41303f;
         font-family: Lato,sans-serif;
+    }
+    #colorTool{
+        background-color: #140e1c;
     }
 </style>

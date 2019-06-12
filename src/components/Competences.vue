@@ -4,7 +4,7 @@
         <div class="img">
             <v-container >
                 <v-flex xs12 sm9 md10>
-                    <h3  >Compétences</h3>
+                    <h3  data-aos="fade-right" data-aos-duration="1500" class="font-weight-thin">Compétences</h3>
                 </v-flex>
 
                 <v-container grid-list-sm fluid>
@@ -63,32 +63,26 @@
                     .then(response => (this.competences = response.data))
             }
         },
-        methods: {
-            shuffle: function () {
-                this.items = _.shuffle(this.items)
-            }
-        }
     };
 
 </script>
 
 
 <style scoped>
-    @font-face {
-        font-family: AmaticFont;
-        src: url(../assets/AmaticSC-Bold.ttf);
-    }
-    h3 {
-        font-family: AmaticFont, sans-serif;
-        font-size: 50px;
+    /*@font-face {*/
+    /*    font-family: AmaticFont;*/
+    /*    src: url(../assets/AmaticSC-Bold.ttf);*/
+    /*}*/
+    h3{
+        font-size: 70px;
         color: #705465;
-        padding: 90px;
+        padding: 90px 0;
     }
     #radius{
         border-width: 25px 4px;
         border-radius: 5px 40px;;
     }
     .competences{
-
+        font-family: Roboto, sans-serif;
     }
 </style>

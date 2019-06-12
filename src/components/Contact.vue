@@ -1,53 +1,59 @@
 <template  xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
     <div id="contact">
         <v-container >
-            <h3> Contact </h3>
+            <h3 data-aos="fade-right"
+                data-aos-duration="1500"
+                class="font-weight-thin"
+            >
+                Contact
+            </h3>
 
             <form
                     @submit.prevent="submitForm"
+                    class="font-weight-light"
             >
                 <v-text-field
                         v-model="name"
                         v-validate="'required'"
                         :error-messages="errors.collect('name')"
                         box
-                        label="Name"
+                        label="Nom"
                         data-vv-name="name"
-                        dark
-                        color="grey"
+                        color="#705465"
+                        class="field"
                 ></v-text-field>
 
                 <v-text-field
                         :error-messages="errors.collect('firstname')"
                         box
-                        dark
-                        color="grey"
+                        color="#705465"
                         data-vv-name="firstname"
-                        label="Firstname"
+                        label="Prénom"
                         v-model="firstname"
                         v-validate="'required'"
+                        class="field"
                 ></v-text-field>
 
                 <v-text-field
                         :error-messages="errors.collect('email')"
                         box
-                        dark
-                        color="grey"
+                        color="#705465"
                         data-vv-name="email"
                         label="E-mail"
                         v-model="email"
                         v-validate="'required|email'"
+                        class="field"
                 ></v-text-field>
 
                 <v-textarea
                         auto-grow
                         box
-                        dark
-                        color="grey"
+                        color="#705465"
                         data-vv-name="commentaire"
                         label="Commentaires"
                         rows="1"
                         v-model="commentaire"
+                        class="field"
                 ></v-textarea>
 
                 <v-dialog
@@ -76,7 +82,7 @@
                             <v-spacer></v-spacer>
                             <v-btn
                                     @click="clearSend"
-                                    color="deep-purple"
+                                    color="#705465"
                                     flat
                             >
                                 FERMER
@@ -95,7 +101,7 @@
                             <v-spacer></v-spacer>
                             <v-btn
                                     @click="dialog = false"
-                                    color="deep-purple"
+                                    color="#705465"
                                     flat
                             >
                                 FERMER
@@ -207,21 +213,27 @@
                 this.email          = ''
                 this.commentaire   = ''
                 this.$validator.reset()
+                this.modalsend = false
             }
         }
     }
 </script>
 
 <style scoped>
-    h3 {
-        font-family: AmaticFont, sans-serif;
-        font-size: 50px;
-        color: antiquewhite;
-        padding: 90px;
+    h3{
+        font-size: 70px;
+        color: #705465;
+        padding: 90px 0;
     }
     #contact{
-        background-image: url("../assets/img/mac4.jpg");
-        background-size: cover;
+        font-family: Roboto, sans-serif;
     }
+    .field{
+        font-size: 25px;
+    }
+    .error--text{
+        color:red !important;
+    }
+
 
 </style>
