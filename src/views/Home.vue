@@ -52,8 +52,8 @@
 <!------------------------------------Footer----------------------------------------->
     <Footer/>
 <!--------------------------------------Back to top---------------------------------------------->
-    <back-to-top  bottom="50px" right="50px">
-      <v-btn outline medium fab color="pink accent-3" >
+    <back-to-top  bottom="45px" right="15px">
+      <v-btn outline small fab color="pink accent-3" >
         <v-icon color="#705465" large class="material-icons">
             keyboard_arrow_up
       </v-icon>
@@ -121,6 +121,9 @@ export default {
         cursor: pointer;
         background:  #705465;
         position:absolute
+    }
+    @media(max-width: 960px)  {
+
     }
 
 </style>

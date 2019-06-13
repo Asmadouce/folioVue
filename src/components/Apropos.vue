@@ -13,7 +13,11 @@
                             </v-flex>
 
                                 <v-flex d-flex>
-                                    <div>{{ lorem }}</div>
+                                    <div>Passionnée d’informatique et de nouvelles technologies, j’ai choisi d’en faire mon métier.
+                                        J’ai pour cela effectué une formation de développeur web et web mobile.
+                                        <br/>J’ai pu réaliser de nombreux projets tel que la création d'une API, d'un blog, etc.
+                                        Fort de cette expérience, j’ai pu monter en compétences de manière rapide et autodidacte. Je maîtrise maintenant plusieurs technologie et plus particulièrement PHP et Symfony.
+                                        J’ai également acquis une forte capacité d’adaptation sur tout type de langage.</div>
                                 </v-flex>
                     </v-layout>
                 </v-flex>
@@ -25,14 +29,6 @@
 <script>
     export default {
         name: "Apropos",
-        data: () => ({
-            lorem: `Lorem ipsum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad
-            ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis
-            iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.
-            Lorem ipsum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad
-            ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis
-            iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`
-        })
     }
 </script>
 
@@ -42,6 +38,11 @@
         font-size: 70px;
         color: #705465;
         padding: 90px 0;
+    }
+    @media(max-width: 960px) {
+        h3 {
+            font-size: 50px;
+        }
     }
 
 </style>

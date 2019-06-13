@@ -31,8 +31,9 @@
                                 data-aos="flip-up"
                                 data-aos-duration="800"
                                 data-aos-easing="linear"
-                                class="exp">
-                            <v-card-title class="headline font-weight-light"> {{experience.entreprise}}    ||      {{experience.poste}} </v-card-title>
+                                class="ma-auto">
+                            <v-card-title class="headline font-weight-light"> {{experience.entreprise}}  </v-card-title>
+                            <v-card-title class="ma-auto"> {{experience.poste}} </v-card-title>
                             <v-card-text class="font-weight-light">
                                 {{experience.descriptions}}
                             </v-card-text>
@@ -70,14 +71,11 @@
 </script>
 
 <style scoped >
-    /*@font-face {*/
-    /*    font-family: AmaticFont;*/
-    /*    src: url(../assets/AmaticSC-Bold.ttf);*/
-    /*}*/
     #experiences{
         font-family: Roboto, sans-serif;
         background-image: url("../assets/img/asmaerigole.jpg");
         background-position: top left;
+        background-size: cover;
     }
     h3 {
         font-size: 70px;
@@ -101,6 +99,19 @@
         color: #e4005e;
         font-size: 85px;
     }
-
+    @media(max-width: 960px)  {
+        #duree{
+            color: #e4005e;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        h1{
+            font-family: Roboto,sans-serif;
+            font-size: 66px;
+        }
+        h3{
+            font-size: 50px;
+        }
+    }
 
 </style>

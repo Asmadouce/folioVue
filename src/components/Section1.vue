@@ -47,26 +47,18 @@
         background-image: url("../assets/img/cvAsmae4.jpg") ;
         font-family: Roboto,sans-serif;
         background-position: top center;
+        background-size: cover;
     }
-    @media(max-width: 577px)  {
+    @media(max-width: 960px)  {
         .section1{
-            background-image: url("../assets/img/cvAsmae4mobile.jpg") ;
+            background-image: url("../assets/img/cvAsmae4.jpg") ;
             font-family: Roboto,sans-serif;
+            background-position: 67% 50%;
+            background-size: cover;
         }
-    }
-    @media(max-width: 760px)  {
         h1{
             font-family: Roboto,sans-serif;
-            font-size: 65px;
-            color: whitesmoke;
-        }
-        .section1{
-            background-image: url("../assets/img/cvAsmae4mobile.jpg") ;
-            padding: 10em;
-            background-position: top center;
-        }
-        .asmae{
-            padding-top: 25vh;
+            font-size: 66px;
         }
     }
     main > .container {

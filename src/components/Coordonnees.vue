@@ -11,7 +11,7 @@
                    +33622945803
                 </h4>
             </v-flex>
-            <v-flex d-flex text-xs-center>
+            <v-flex d-flex text-xs-center >
                 <a href="https://www.linkedin.com/in/asmae-el-gueddari-7030b0119/"><i class="fab fa-linkedin fa-5x"></i></a>
                 <a href="https://github.com/Asmadouce"><i class="fab fa-github fa-5x"></i></a>
             </v-flex>
@@ -42,6 +42,16 @@
     }
     .fab{
         color: #e4005e;
+    }
+    @media(max-width: 960px)  {
+        h3{
+            font-size: 27px;
+        }
+        h4{
+            font-size: 30px;
+            color: #ffffff;
+        }
+
     }
 
 </style>

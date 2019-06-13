@@ -69,10 +69,6 @@
 
 
 <style scoped>
-    /*@font-face {*/
-    /*    font-family: AmaticFont;*/
-    /*    src: url(../assets/AmaticSC-Bold.ttf);*/
-    /*}*/
     h3{
         font-size: 70px;
         color: #705465;
@@ -84,5 +80,10 @@
     }
     .competences{
         font-family: Roboto, sans-serif;
+    }
+    @media(max-width: 960px)  {
+        h3{
+            font-size: 50px;
+        }
     }
 </style>

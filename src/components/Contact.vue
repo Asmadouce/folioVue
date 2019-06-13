@@ -234,6 +234,11 @@
     .error--text{
         color:red !important;
     }
+    @media(max-width: 960px) {
+        h3 {
+            font-size: 50px;
+        }
+    }
 
 
 </style>
